@@ -1,0 +1,165 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main app container */
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #e5e7eb;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Main title styling */
+.main-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #6b7280;
+  margin-bottom: 30px;
+  letter-spacing: -0.02em;
+}
+
+/* Horizontal divider line */
+.divider {
+  width: 100%;
+  height: 4px;
+  background-color: #6b7280;
+  margin-bottom: 40px;
+  border-radius: 2px;
+}
+
+/* Resort cards grid layout */
+.resort-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Individual resort card styling */
+.resort-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.resort-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Card image container */
+.card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.resort-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* Card content area */
+.card-content {
+  padding: 20px;
+}
+
+/* Country name styling */
+.country {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* Hotel name styling */
+.hotel-name {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Rating styling */
+.rating {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Price styling */
+.price {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .resort-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  
+  .app {
+    padding: 20px 10px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .country {
+    font-size: 1.25rem;
+  }
+  
+  .hotel-name {
+    font-size: 1rem;
+  }
+  
+  .rating,
+  .price {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet responsive design */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .resort-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .main-title {
+    font-size: 3.5rem;
+  }
+}
