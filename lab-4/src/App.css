@@ -1,0 +1,138 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.loading-container {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* PostForm  */
+.post-form-container {
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-form-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.post-form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-label {
+  color: white;
+  font-size: 1.125rem;
+}
+
+.form-input {
+  padding: 0.5rem 0.75rem;
+  background-color: #292929;
+  color: white;
+  border: 1px solid #4d4c4c;
+  border-radius: 0.25rem;
+  width: 16rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #4d4c4c;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* PostsContainer */
+.posts-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PostCard */
+.post-card {
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.post-card-body {
+  color: white;
+  font-size: 1rem;
+}
